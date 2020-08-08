@@ -4,8 +4,8 @@
 ssh -i  "demo.pem" ubuntu@ec2-100-27-3-212.compute-1.amazonaws.com
 ssh -L localhost:8888:localhost:8888 -i "demo.pem" ubuntu@ec2-100-27-3-212.compute-1.amazonaws.com
 #gpu
-ssh -i  "demo.pem" ubuntu@ec2-34-239-120-109.compute-1.amazonaws.com
-ssh -L localhost:8888:localhost:8888 -i "demo.pem" ubuntu@ec2-34-239-120-109.compute-1.amazonaws.com
+ssh -i  "demo.pem" ubuntu@ec2-3-83-163-22-109.compute-1.amazonaws.com
+ssh -L localhost:8888:localhost:8888 -i "demo.pem" ubuntu@ec2-3-83-163-22.compute-1.amazonaws.com
 sudo kill -9 $(sudo lsof -t -i:8888)
 ```
 ### share valume
